@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0f0f1a; }
+::-webkit-scrollbar-thumb { background: #252550; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a70; }
+
+.card {
+  @apply bg-[#0f0f1a] border border-[#1a1a35] rounded-xl;
+}
+
+*:focus-visible {
+  @apply outline-none ring-2 ring-indigo-500 ring-offset-2 ring-offset-[#0a0a0f];
+}
