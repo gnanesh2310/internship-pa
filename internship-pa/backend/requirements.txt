@@ -13,7 +13,7 @@ requests==2.31.0
 python-dotenv==1.0.1
 schedule==1.2.1
 pytz==2024.1
-httpx==0.27.0
+httpx==0.25.2
 lxml==5.2.1
 fake-useragent==1.5.1
 gspread==6.1.0
