@@ -3,7 +3,8 @@ import os
 from together import Together
 from database.queries import track_api_usage
 
-_client = Together(api_key=os.environ.get("TOGETHER_API_KEY", ""))
+os.environ["TOGETHER_API_KEY"] = os.environ.get("TOGETHER_API_KEY", "")
+_client = Together()
 
 def generate(prompt: str) -> str:
     response = _client.chat.completions.create(
